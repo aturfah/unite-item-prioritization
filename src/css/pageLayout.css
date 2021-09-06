@@ -1,0 +1,16 @@
+div.page-layout {}
+
+div.pokemon-display {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+div.pokemon-icon {
+    display: inline-flex;
+    padding: 5px;
+    font-size: large;
+}
+
+div.active {
+    font-weight: bold;
+}
