@@ -59,16 +59,39 @@ class PageLayout extends Component {
             // Only want to count items for pokemon who are chosen
             return this.state.selectedPokemon.indexOf(datum["id"]) === -1 ? false : true
         })
-        weightItemUsage(pokemonData)
+        const itemWeightData = weightItemUsage(pokemonData)
+        console.log(itemWeightData)
 
-        return <div>
-            {pokemonData.length}
+        const itemWeightRows = []
+        itemWeightData.forEach((datum, idx) => {
+            itemWeightRows.push(<tr key={datum.key}>
+                <td>{idx + 1}</td>
+                <td>{datum.name}</td>
+                <td>{datum.itemWeight}</td>
+                <td>{datum.pokemonList.join(", ")}</td>
+            </tr>)
+        })
+
+        return <div className="weight-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Weight</th>
+                        <th>Pok&eacute;mon</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {itemWeightRows}
+                </tbody>
+            </table>
         </div>
     }
 
     render() {
         return <div className="page-layout">
-            <h1>Choose your Pokemon!</h1>
+            <h1>Choose your Pok&eacute;mon!</h1>
             {this._generatePokemonNameDisplay()}
 
             <h1>Suggested Item Prioritization</h1>

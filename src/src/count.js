@@ -41,15 +41,14 @@ export function weightItemUsage(pokemonData) {
     const output = []
     // Final data construction; list of objects
     itemWeightArray.forEach(datum => {
-        console.log(datum)
         const itemName = datum[0]
         output.push({
             key: itemName,
+            name: itemName,
             itemWeight: datum[1],
             pokemonList: itemPokemonMapping[itemName]
         })
     })
 
-    console.log(output)
     return output
 }
