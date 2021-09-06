@@ -13,6 +13,7 @@ div.pokemon-icon {
 
 div.active {
     font-weight: bold;
+    color: blue;
 }
 
 div.weight-table {

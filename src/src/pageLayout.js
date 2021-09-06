@@ -72,8 +72,7 @@ class PageLayout extends Component {
             </tr>)
         })
 
-        return <div className="weight-table">
-            <table>
+        return <table>
                 <thead>
                     <tr>
                         <th>Rank</th>
@@ -86,16 +85,22 @@ class PageLayout extends Component {
                     {itemWeightRows}
                 </tbody>
             </table>
-        </div>
+        
     }
 
     render() {
+        let itemTable = <i>Select a Pok&eacute;mon above!</i>
+        if (this.state.selectedPokemon.length !== 0) {
+            itemTable = this._generateItemPrioritizationTable()
+        }
         return <div className="page-layout">
             <h1>Choose your Pok&eacute;mon!</h1>
             {this._generatePokemonNameDisplay()}
 
             <h1>Suggested Item Prioritization</h1>
-            {this._generateItemPrioritizationTable()}
+            <div className="weight-table">
+                {itemTable}
+            </div>
         </div>
     }
 }
