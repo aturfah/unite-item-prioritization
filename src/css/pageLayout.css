@@ -7,13 +7,24 @@ div.pokemon-display {
 
 div.pokemon-icon {
     display: inline-flex;
-    padding: 5px;
-    font-size: large;
+    margin: 5px;
+}
+
+img.select-img {
+    display: block;
+    width: 80px;
+    text-align: center;
 }
 
 div.active {
     font-weight: bold;
     color: blue;
+    margin: 3px;
+}
+
+img.active-img {
+    border: 2px solid red;
+    border-radius: 10px;
 }
 
 div.weight-table {
