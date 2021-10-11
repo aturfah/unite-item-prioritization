@@ -19,6 +19,7 @@ img.select-img {
 div.active {
     font-weight: bold;
     color: blue;
+    margin: 3px;
 }
 
 img.active-img {
