@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/unite-item-prioritization/static/css/main.82e13405.chunk.css",
+    "main.css": "/unite-item-prioritization/static/css/main.51ed2740.chunk.css",
     "main.js": "/unite-item-prioritization/static/js/main.405cd92e.chunk.js",
     "main.js.map": "/unite-item-prioritization/static/js/main.405cd92e.chunk.js.map",
     "runtime-main.js": "/unite-item-prioritization/static/js/runtime-main.7456bd53.js",
@@ -10,13 +10,13 @@
     "static/js/3.fbfef295.chunk.js": "/unite-item-prioritization/static/js/3.fbfef295.chunk.js",
     "static/js/3.fbfef295.chunk.js.map": "/unite-item-prioritization/static/js/3.fbfef295.chunk.js.map",
     "index.html": "/unite-item-prioritization/index.html",
-    "static/css/main.82e13405.chunk.css.map": "/unite-item-prioritization/static/css/main.82e13405.chunk.css.map",
+    "static/css/main.51ed2740.chunk.css.map": "/unite-item-prioritization/static/css/main.51ed2740.chunk.css.map",
     "static/js/2.d6ba23e0.chunk.js.LICENSE.txt": "/unite-item-prioritization/static/js/2.d6ba23e0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7456bd53.js",
     "static/js/2.d6ba23e0.chunk.js",
-    "static/css/main.82e13405.chunk.css",
+    "static/css/main.51ed2740.chunk.css",
     "static/js/main.405cd92e.chunk.js"
   ]
 }
