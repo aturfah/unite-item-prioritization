@@ -23,7 +23,7 @@ function App() {
           <ul style={{"textAlign":"left"}}>
               <li><b>Venusaur #1</b>: Buddy Barrier, Focus Band, Muscle Band</li>
               <li><b>Blastoise #1</b>: Buddy Barrier, Muscle Band, Score Shield</li>
-              <li><b>Blastoise #2</b>: Buddy Barrier, Muscle Band, Focus Band</li>
+              <li><b>Blastoise #2</b>: Buddy Barrier, Focus Band, Muscle Band</li>
               <li><b>Eldegoss #1</b>: Buddy Barrier, Muscle Band, Exp. Share</li>
               <li><b>Eldegoss #2</b>: Buddy Barrier, Muscle Band, Score Shield</li>
             </ul>
@@ -41,7 +41,7 @@ function App() {
                 <ul>
                   <li>Since Blastoise has two sets, each set provides a weight of 0.5.</li>
                   <li>From the first set I <u>add a weight of 0.5 to each of Buddy Barrier, Muscle Band, and Score Shield</u>.</li>
-                  <li>Looking to Blastoise's second set, I <u>add a weight of 0.5 to each of Buddy Barrier, Muscle Band, and Focus Band</u>.</li>
+                  <li>Looking to Blastoise's second set, I <u>add a weight of 0.5 to each of Buddy Barrier, Focus Band, and Muscle Band</u>.</li>
                 </ul>
               </li>
               <li><b>Eldegoss</b>
@@ -63,7 +63,10 @@ function App() {
               </ul>
             </ol>
           <p>
-            Without getting too bogged down by the numbers, it should be apparent that Buddy Barrier and Muscle Band are integral to all three of the Pok&eacute;mon I want to play (every pokemon has a set that uses them), and should be prioritized before any other items. From here, the prioriziation is a bit flexible since there are no stand-out items (the weights and number of Pok&eacute;mon they come from aren't all that different). Once again, this weighting assumes the player will play the selected Pok&eacute;mon roughly equally; if I were plannig to play Eldegoss 90% of the time I should prioritize the items that Eldegoss benefits from, even if they have lower overall weight.
+            Without getting too bogged down by the numbers, it should be apparent that Buddy Barrier and Muscle Band are integral to all three of the Pok&eacute;mon I want to play (every set for every pokemon uses them), and should be prioritized before any other items. From here, the prioriziation is a bit flexible since there are no stand-out items (the weights and number of Pok&eacute;mon they come from aren't all that different).
+          </p>
+          <p
+            >Once again, it helps to bear in mind this weighting assumes the player will play the selected Pok&eacute;mon roughly equally; if I were plannig to play Eldegoss 90% of the time I should prioritize the items that Eldegoss benefits from, even if they have lower overall weight.
           </p>
         </div>
     </div>
