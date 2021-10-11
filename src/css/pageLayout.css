@@ -28,7 +28,19 @@ img.active-img {
 }
 
 div.weight-table {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
     display: inline-flex;
+}
+
+.weight-table table {
+    border-collapse: collapse;
+}
+
+.weight-table tbody tr {
+    border-top: 1.5px solid black;
+}
+
+.weight-table-cell {
+    padding: 3px;
 }

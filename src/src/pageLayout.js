@@ -75,20 +75,22 @@ class PageLayout extends Component {
         const itemWeightRows = []
         itemWeightData.forEach((datum, idx) => {
             itemWeightRows.push(<tr key={datum.key}>
-                <td>{idx + 1}</td>
-                <td>{datum.name}</td>
-                <td>{datum.itemWeight}</td>
-                <td>{datum.pokemonList.join(", ")}</td>
+                <td className="weight-table-cell">{idx + 1}</td>
+                <td className="weight-table-cell">{datum.name}</td>
+                <td className="weight-table-cell">{datum.itemWeight}</td>
+                <td className="weight-table-cell">{datum.pokemonList.length}</td>
+                <td className="weight-table-cell">{datum.pokemonList.join(", ")}</td>
             </tr>)
         })
 
         return <table>
                 <thead>
                     <tr>
-                        <th>Rank</th>
-                        <th>Name</th>
-                        <th>Weight</th>
-                        <th>Pok&eacute;mon</th>
+                        <th className="weight-table-cell">Rank</th>
+                        <th className="weight-table-cell">Name</th>
+                        <th className="weight-table-cell">Weight</th>
+                        <th className="weight-table-cell">Num. Pok&eacute;mon</th>
+                        <th className="weight-table-cell">Pok&eacute;mon Names</th>
                     </tr>
                 </thead>
                 <tbody>
