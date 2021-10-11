@@ -46,7 +46,13 @@ class PageLayout extends Component {
         this.state.uniteData.forEach((value) => {
             const pokeID = value["id"]
             const activePoke = (this.state.selectedPokemon.indexOf(pokeID) !== -1)
-            const imgSrc = "https://play.pokemonshowdown.com/sprites/dex/" + value["name"].replace(".", "").toLowerCase() + ".png"
+            // Get the sprite
+            let imgSrc = "https://play.pokemonshowdown.com/sprites/dex/" + value["name"].replace(".", "").toLowerCase()
+            if (value["name"] === "Ninetales") {
+                imgSrc += "-alola"
+            }
+            imgSrc += ".png"
+
             pokemonDisplay.push(
                 <div className={"pokemon-icon " + (activePoke ? "active" : "")}
                     onClick={() => this._selectPokemon(pokeID)}>
