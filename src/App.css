@@ -8,8 +8,12 @@
 }
 
 div.misc {
-  margin-left: 20%;
-  width: 60%;
+  margin-left: 15%;
+  width: 70%;
+}
+
+div.misc p {
+  text-align: left;
 }
 
 @media (prefers-reduced-motion: no-preference) {
