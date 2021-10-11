@@ -24,7 +24,7 @@ function App() {
               <li><b>Venusaur #1</b>: Buddy Barrier, Focus Band, Muscle Band</li>
               <li><b>Blastoise #1</b>: Buddy Barrier, Muscle Band, Score Shield</li>
               <li><b>Blastoise #2</b>: Buddy Barrier, Focus Band, Muscle Band</li>
-              <li><b>Eldegoss #1</b>: Buddy Barrier, Muscle Band, Exp. Share</li>
+              <li><b>Eldegoss #1</b>: Buddy Barrier, Muscle Band, Exp Share</li>
               <li><b>Eldegoss #2</b>: Buddy Barrier, Muscle Band, Score Shield</li>
             </ul>
           <p>
@@ -47,7 +47,7 @@ function App() {
               <li><b>Eldegoss</b>
               <ul>
                   <li>Since Eldegoss has two sets, each set provides a weight of 0.5.</li>
-                  <li>From the first set I <u>add a weight of 0.5 to Buddy Barrier, Muscle Band, and Exp. Share</u>.</li>
+                  <li>From the first set I <u>add a weight of 0.5 to Buddy Barrier, Muscle Band, and Exp Share</u>.</li>
                   <li>Looking to Eldegoss's second set, I <u>add a weight of 0.5 to Buddy Barrier, Muscle Band, and Score Shield</u></li>
                 </ul>
               </li>
@@ -59,7 +59,7 @@ function App() {
                 <li>Muscle Band: Weight of 3 (1 + 0.5 + 0.5 + 0.5 + 0.5) from all 3 Pok&eacute;mon</li>
                 <li>Focus Band: Weight of 1.5 (1 + 0.5) from Venusaur and Blastoise</li>
                 <li>Score Shield: Weight of 1 (0.5 + 0.5) from Blastoise and Eldegoss</li>
-                <li>Exp. Share: Weight of 0.5 (0.5) from Eldegoss</li>
+                <li>Exp Share: Weight of 0.5 (0.5) from Eldegoss</li>
               </ul>
             </ol>
           <p>
