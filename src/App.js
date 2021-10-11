@@ -14,7 +14,7 @@ function App() {
           <p>
             Data for recommended builds taken from <a href="https://unite-db.com">www.unite-db.com</a>. 
             Each Pok&eacute;mon's build is weighted by the total number of builds available for that Pok&eacute;mon (if Venusaur has 2 builds, then each build's items would contribute weight of 0.5); this is to prevent Pok&eacute;mon with a large number of sets from skewing the weight in their favor.
-            These weights are aggregated across all the sets for all the chosen Pok&eacute;mon, and sorted for display in a table.
+            These weights are aggregated across all the sets for all the chosen Pok&eacute;mon, and sorted for display in a table. The more sets that use an item, the higher its weight and by extension the more highly it should be prioritized.
           </p>
         </div>
     </div>
