@@ -6,27 +6,31 @@ function App() {
     <div className="App">
         <PageLayout />
         <div className="misc">
-          <h1>Purpose/Explanation of Weighting</h1>
+          <h1>Purpose</h1>
           <p>
             The purpose of this site is to help players prioritize their item enhancers for the Pok&eacute;mon they plan to play.
             Items that are useful on many Pok&eacute;mon are given higher weighting than ones who only have a few Pok&eacute;mon using them.
-            Data for recommended builds taken from <a href="https://unite-db.com">www.unite-db.com</a>. 
+            The weighting assumes that Pok&eacute;mon will be played roughly equally, so bear in mind your preferences when deciding how to use your item enhancers.
           </p>
+          <h1>Explanation of Weighting</h1>
           <p>
-            Each Pok&eacute;mon's build is weighted by the total number of builds available for that Pok&eacute;mon; this is to prevent Pok&eacute;mon with a large number of sets from skewing the weight in their favor.
+            Data for recommended builds taken from <a href="https://unite-db.com">www.unite-db.com</a>. Each Pok&eacute;mon's build is weighted by the total number of builds available for that Pok&eacute;mon; this is to prevent Pok&eacute;mon with a large number of sets from skewing the weight in their favor.
             These weights are aggregated across all the sets for all the chosen Pok&eacute;mon, and sorted for display in a table. The more sets that use an item, the higher its weight and by extension the more highly it should be prioritized.
           </p>
           <p>
             For example, suppose I want to play Blastoise, Venusaur, and Eldegoss, who have the recommended held items listed below.
-            <ul style={{"text-align":"left"}}>
+          </p>
+          <ul style={{"textAlign":"left"}}>
               <li><b>Venusaur #1</b>: Buddy Barrier, Focus Band, Muscle Band</li>
               <li><b>Blastoise #1</b>: Buddy Barrier, Muscle Band, Score Shield</li>
               <li><b>Blastoise #2</b>: Buddy Barrier, Muscle Band, Focus Band</li>
               <li><b>Eldegoss #1</b>: Buddy Barrier, Muscle Band, Exp. Share</li>
               <li><b>Eldegoss #2</b>: Buddy Barrier, Muscle Band, Score Shield</li>
             </ul>
+          <p>
             The weight calculations are described below.
-            <ol style={{"text-align":"left"}}>
+          </p>
+          <ol style={{"textAlign":"left"}}>
               <li><b>Venusaur</b>
                 <ul>
                   <li>Since Venusaur only has one set, I <u>add a weight of 1 to each of Buddy Barrier, Focus Band, and Muscle Band</u>.</li>
@@ -58,7 +62,8 @@ function App() {
                 <li>Exp. Share: Weight of 0.5 (0.5) from Eldegoss</li>
               </ul>
             </ol>
-            Without getting too bogged down by the numbers, it should be apparent that Buddy Barrier and Muscle Band are integral to all three of the Pok&eacute;mon I want to play (every pokemon has a set that uses them), and should be prioritized before any other items. From here, the prioriziation is a bit flexible since there are no stand-out items (the weights and number of Pok&eacute;mon they come from aren't all that different).This also assumes the player will play these Pok&eacute;mon roughly equally; if I were to play Eldegoss 90% of the time I should prioritize the items that Eldegoss benefits from, even if they have lower overall weight.
+          <p>
+            Without getting too bogged down by the numbers, it should be apparent that Buddy Barrier and Muscle Band are integral to all three of the Pok&eacute;mon I want to play (every pokemon has a set that uses them), and should be prioritized before any other items. From here, the prioriziation is a bit flexible since there are no stand-out items (the weights and number of Pok&eacute;mon they come from aren't all that different). Once again, this weighting assumes the player will play the selected Pok&eacute;mon roughly equally; if I were plannig to play Eldegoss 90% of the time I should prioritize the items that Eldegoss benefits from, even if they have lower overall weight.
           </p>
         </div>
     </div>
