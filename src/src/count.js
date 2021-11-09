@@ -6,14 +6,25 @@ export function weightItemUsage(pokemonData) {
         // Weight inversely by number of sets a pokemon has
         // if lots of viable items then each has low weight
         const pokemonName = datum.name
-        const weightFactor = 1 / datum.builds.length;
+        const weightFactor = 1 / datum.builds.filter((obj) => {return obj.name !== ""}).length;
         datum.builds.forEach(buildDatum => {
-            buildDatum.held_items.forEach(heldItem => {
+            let optionalItem = false;
+            let held_items = JSON.parse(JSON.stringify(buildDatum.held_items))
+            if(buildDatum.held_items_optional !== "") {
+                optionalItem = true
+                // Add the items; optional replaces last one
+                held_items.push(
+                    buildDatum.held_items_optional, ...held_items
+                )
+                held_items.splice(-1)
+            }
+
+            held_items.forEach(heldItem => {
                 // set the weights
                 if (itemWeights[heldItem] === undefined) {
                     itemWeights[heldItem] = 0
                 }
-                itemWeights[heldItem] += weightFactor
+                itemWeights[heldItem] += weightFactor * (optionalItem ? 0.5: 1)
 
                 // add the pokemon
                 if (itemPokemonMapping[heldItem] === undefined) {
