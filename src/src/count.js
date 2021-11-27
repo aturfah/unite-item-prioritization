@@ -10,7 +10,7 @@ export function weightItemUsage(pokemonData) {
         datum.builds.forEach(buildDatum => {
             let optionalItem = false;
             let held_items = JSON.parse(JSON.stringify(buildDatum.held_items))
-            if(Object.keys(buildDatum).indexOf("buildDatum") !== -1 & buildDatum.held_items_optional !== "") {
+            if(Object.keys(buildDatum).indexOf("held_items_optional") !== -1 & buildDatum.held_items_optional !== "") {
                 optionalItem = true
                 // Add the items; optional replaces last one
                 held_items.push(
