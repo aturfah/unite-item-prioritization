@@ -70,7 +70,7 @@ class PageLayout extends Component {
             return this.state.selectedPokemon.indexOf(datum["id"]) === -1 ? false : true
         })
         const itemWeightData = weightItemUsage(pokemonData)
-        console.log(itemWeightData)
+        // console.log(itemWeightData)
 
         const itemWeightRows = []
         itemWeightData.forEach((datum, idx) => {
