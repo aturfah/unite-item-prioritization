@@ -9,6 +9,11 @@ export function weightItemUsage(pokemonData) {
         const weightFactor = 1 / datum.builds.filter((obj) => {return obj.name !== ""}).length;
         datum.builds.forEach(buildDatum => {
             let optionalItem = false;
+            if (buildDatum["soon"] === "True") {
+                // Pokemon for whom no set exists
+                return
+            }
+
             let held_items = JSON.parse(JSON.stringify(buildDatum.held_items))
             if(Object.keys(buildDatum).indexOf("held_items_optional") !== -1 & buildDatum.held_items_optional !== "") {
                 optionalItem = true
