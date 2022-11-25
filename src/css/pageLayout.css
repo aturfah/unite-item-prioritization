@@ -45,3 +45,8 @@ div.weight-table {
     padding: 3px;
     max-width: 500px;
 }
+
+.soon-pkmn {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
