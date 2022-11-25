@@ -47,16 +47,22 @@ class PageLayout extends Component {
             const pokeID = value["id"]
             const activePoke = (this.state.selectedPokemon.indexOf(pokeID) !== -1)
             // Get the sprite
-            let imgSrc = "https://play.pokemonshowdown.com/sprites/dex/" + value["name"].replace(".", "").toLowerCase()
+            let imgSrc = "https://play.pokemonshowdown.com/sprites/gen5/" + value["name"].replace(".", "").toLowerCase()
             if (value["name"] === "Ninetales") {
                 imgSrc += "-alola"
             }
             imgSrc += ".png"
 
+            // If a pokemon has no sets, grayscale and not clickable
+            let soonPoke = false;
+            if (value.builds[0].soon === "True") {
+                soonPoke = true
+            }
+
             pokemonDisplay.push(
-                <div className={"pokemon-icon " + (activePoke ? "active" : "")}
-                    onClick={() => this._selectPokemon(pokeID)}>
-                        <img className={"select-img " + (activePoke ? "active-img" : "")}
+                <div className={"pokemon-icon " + (activePoke ? "active " : "") }
+                    onClick={() => (soonPoke ? alert("No set data for " + value["name"]) : this._selectPokemon(pokeID))}>
+                        <img className={"select-img " + (activePoke ? "active-img" : "") + (soonPoke ? "soon-pkmn" : "")}
                             src={imgSrc} alt={value["name"]}/>
                     </div>
             )
