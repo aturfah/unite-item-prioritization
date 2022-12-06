@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/unite-item-prioritization/static/css/main.6a382048.chunk.css",
-    "main.js": "/unite-item-prioritization/static/js/main.6ff7638f.chunk.js",
-    "main.js.map": "/unite-item-prioritization/static/js/main.6ff7638f.chunk.js.map",
+    "main.css": "/unite-item-prioritization/static/css/main.0a5c9645.chunk.css",
+    "main.js": "/unite-item-prioritization/static/js/main.2e687597.chunk.js",
+    "main.js.map": "/unite-item-prioritization/static/js/main.2e687597.chunk.js.map",
     "runtime-main.js": "/unite-item-prioritization/static/js/runtime-main.4f873abd.js",
     "runtime-main.js.map": "/unite-item-prioritization/static/js/runtime-main.4f873abd.js.map",
     "static/js/2.def14806.chunk.js": "/unite-item-prioritization/static/js/2.def14806.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.0b7d0785.chunk.js": "/unite-item-prioritization/static/js/3.0b7d0785.chunk.js",
     "static/js/3.0b7d0785.chunk.js.map": "/unite-item-prioritization/static/js/3.0b7d0785.chunk.js.map",
     "index.html": "/unite-item-prioritization/index.html",
-    "static/css/main.6a382048.chunk.css.map": "/unite-item-prioritization/static/css/main.6a382048.chunk.css.map",
+    "static/css/main.0a5c9645.chunk.css.map": "/unite-item-prioritization/static/css/main.0a5c9645.chunk.css.map",
     "static/js/2.def14806.chunk.js.LICENSE.txt": "/unite-item-prioritization/static/js/2.def14806.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4f873abd.js",
     "static/js/2.def14806.chunk.js",
-    "static/css/main.6a382048.chunk.css",
-    "static/js/main.6ff7638f.chunk.js"
+    "static/css/main.0a5c9645.chunk.css",
+    "static/js/main.2e687597.chunk.js"
   ]
 }
