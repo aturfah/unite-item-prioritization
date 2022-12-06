@@ -42,8 +42,8 @@ div.weight-table {
 }
 
 .weight-table-cell {
-    padding: 3px;
-    max-width: 400px;
+    padding: 5px;
+    max-width: 500px;
 }
 
 .soon-pkmn {
@@ -55,4 +55,10 @@ div.weight-table {
     padding: 5px;
     margin: 3px;
     font-size: 14pt;
+}
+
+.name-cell {
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    color: red;
 }

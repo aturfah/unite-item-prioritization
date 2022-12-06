@@ -90,7 +90,7 @@ class PageLayout extends Component {
                 <td className="weight-table-cell">{datum.name}</td>
                 <td className="weight-table-cell">{datum.itemWeight.toFixed(2)}</td>
                 <td className="weight-table-cell">{datum.pokemonList.length}</td>
-                <td className="weight-table-cell">{datum.pokemonList.join(", ")}</td>
+                <td className="weight-table-cell name-cell">{datum.pokemonList.join(", ")}</td>
             </tr>)
         })
 
@@ -100,8 +100,8 @@ class PageLayout extends Component {
                         <th className="weight-table-cell">Rank</th>
                         <th className="weight-table-cell">Name</th>
                         <th className="weight-table-cell">Weight</th>
-                        <th className="weight-table-cell">Num. Pok&eacute;mon</th>
-                        <th className="weight-table-cell">Pok&eacute;mon Names</th>
+                        <th className="weight-table-cell"># Pok&eacute;mon</th>
+                        <th className="weight-table-cell name-cell">Pok&eacute;mon Names</th>
                     </tr>
                 </thead>
                 <tbody>
