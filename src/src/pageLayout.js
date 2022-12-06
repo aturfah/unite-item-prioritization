@@ -16,6 +16,7 @@ class PageLayout extends Component {
         // Bind Functions
         this._selectPokemon = this._selectPokemon.bind(this);
         this._generatePokemonNameDisplay = this._generatePokemonNameDisplay.bind(this);
+        this._resetPokemon = this._resetPokemon.bind(this);
     }
 
     componentDidMount() {
@@ -26,6 +27,10 @@ class PageLayout extends Component {
                 uniteData: uniteData
             })
         })
+    }
+
+    _resetPokemon() {
+        this.setState({selectedPokemon: []})
     }
 
     _selectPokemon(pokeID) {
@@ -83,7 +88,7 @@ class PageLayout extends Component {
             itemWeightRows.push(<tr key={datum.key}>
                 <td className="weight-table-cell">{idx + 1}</td>
                 <td className="weight-table-cell">{datum.name}</td>
-                <td className="weight-table-cell">{datum.itemWeight}</td>
+                <td className="weight-table-cell">{Math.round(datum.itemWeight * 1000)/1000}</td>
                 <td className="weight-table-cell">{datum.pokemonList.length}</td>
                 <td className="weight-table-cell">{datum.pokemonList.join(", ")}</td>
             </tr>)
@@ -115,10 +120,16 @@ class PageLayout extends Component {
             <h1>Choose your Pok&eacute;mon!</h1>
             {this._generatePokemonNameDisplay()}
 
+            <div>
+                <button className="reset-button" onClick={this._resetPokemon}>Reset Selection</button>
+            </div>
+
+
             <h1>Suggested Item Prioritization</h1>
             <div className="weight-table">
                 {itemTable}
             </div>
+
         </div>
     }
 }
