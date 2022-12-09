@@ -67,6 +67,7 @@ div.weight-table {
 div.left-col {
     /* background-color: blue; */
     /* max-height: 500px; */
+    margin-top: 15px;
     position: relative;
     height: relative;
   }
@@ -74,6 +75,7 @@ div.left-col {
   div.right-col {
     /* background-color: red; */
     padding-bottom: 1%;
+    margin-top: 15px;
     /* max-height: 500px; */
     max-height: 750px;
     overflow-y: auto;
