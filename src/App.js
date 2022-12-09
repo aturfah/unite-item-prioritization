@@ -4,7 +4,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-        <PageLayout />
+        <div className="functional-portion">
+          <PageLayout />
+        </div>
         <div className="misc">
           <h1>Purpose</h1>
           <p>

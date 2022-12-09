@@ -117,19 +117,22 @@ class PageLayout extends Component {
             itemTable = this._generateItemPrioritizationTable()
         }
         return <div className="page-layout">
-            <h1>Choose your Pok&eacute;mon!</h1>
-            {this._generatePokemonNameDisplay()}
 
             <div>
-                <button className="reset-button" onClick={this._resetPokemon}>Reset Selection</button>
+                <div className="left-col">
+                    <h1>Choose your Pok&eacute;mon!</h1>
+                    <div>
+                        <button className="reset-button" onClick={this._resetPokemon}>Reset Selection</button>
+                    </div>
+                    {this._generatePokemonNameDisplay()}
+                </div>
+                <div className="right-col">
+                    <h1>Suggested Item Prioritization</h1>
+                    <div className="weight-table">
+                        {itemTable}
+                    </div>
+                </div>
             </div>
-
-
-            <h1>Suggested Item Prioritization</h1>
-            <div className="weight-table">
-                {itemTable}
-            </div>
-
         </div>
     }
 }
