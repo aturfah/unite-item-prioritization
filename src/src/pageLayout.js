@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import React, {Component} from "react";
 import { weightItemUsage } from "./count";
 import '../css/pageLayout.css';
@@ -118,15 +119,16 @@ class PageLayout extends Component {
         }
         return <div className="page-layout">
 
-            <div>
-                <div className="left-col">
+            <div className='row'>
+                <div className="col-1"></div>
+                <div className="left-col col-md-4 col-s-10">
                     <h1>Choose your Pok&eacute;mon!</h1>
                     <div>
                         <button className="reset-button" onClick={this._resetPokemon}>Reset Selection</button>
                     </div>
                     {this._generatePokemonNameDisplay()}
                 </div>
-                <div className="right-col">
+                <div className="right-col col-md-6 col-s-10">
                     <h1>Suggested Item Prioritization</h1>
                     <div className="weight-table">
                         {itemTable}

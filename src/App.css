@@ -45,24 +45,3 @@ div.misc p {
     transform: rotate(360deg);
   }
 }
-
-div.left-col {
-  width: 35%;
-  display: inline-block;
-  margin-left: 10%;
-  background-color: blue;
-  height: 100%;
-}
-
-div.right-col {
-  width: 35%;
-  display: inline-block;
-  height: 100%;
-  margin-right: 10%;
-  background-color: red;
-}
-
-div.functional-portion {
-  min-height: 100px;
-  margin-bottom: 5px;
-}

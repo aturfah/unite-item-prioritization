@@ -1,8 +1,8 @@
 div.page-layout {}
 
 div.pokemon-display {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 div.pokemon-icon {
@@ -11,8 +11,8 @@ div.pokemon-icon {
 }
 
 img.select-img {
-    display: block;
-    width: 100px;
+    display: inline-block;
+    width: 61px;
     text-align: center;
 }
 
@@ -28,8 +28,8 @@ img.active-img {
 }
 
 div.weight-table {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
     display: inline-flex;
 }
 
@@ -43,7 +43,7 @@ div.weight-table {
 
 .weight-table-cell {
     padding: 5px;
-    max-width: 500px;
+    /* max-width: 500px; */
 }
 
 .soon-pkmn {
@@ -52,12 +52,29 @@ div.weight-table {
 }
 
 .reset-button {
-    padding: 5px;
+    padding: 3px;
     margin: 3px;
-    font-size: 14pt;
+    font-size: 12pt;
 }
 
 .name-cell {
     padding-right: 2.5%;
     padding-left: 2.5%;
+    max-width: 200px;
 }
+
+
+div.left-col {
+    /* background-color: blue; */
+    /* max-height: 500px; */
+    position: relative;
+    height: relative;
+  }
+  
+  div.right-col {
+    /* background-color: red; */
+    padding-bottom: 1%;
+    /* max-height: 500px; */
+    max-height: 750px;
+    overflow-y: auto;
+  }
