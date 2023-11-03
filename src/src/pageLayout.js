@@ -56,7 +56,9 @@ class PageLayout extends Component {
             let imgSrc = "https://play.pokemonshowdown.com/sprites/gen5/" + value["name"].replace(".", "").toLowerCase()
             if (value["name"] === "Ninetales") {
                 imgSrc += "-alola"
-            }
+            } else if (value["name"] === "MewtwoX" | value["name"] === "MewtwoY") {
+                imgSrc = imgSrc.replace("mewtwo", "mewtwo-mega")
+            } 
             imgSrc += ".png"
 
             // If a pokemon has no sets, grayscale and not clickable
