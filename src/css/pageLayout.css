@@ -1,36 +1,38 @@
 div.page-layout {}
 
 div.pokemon-display {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 div.pokemon-icon {
     display: inline-flex;
-    margin: 5px;
-}
-
-img.select-img {
-    display: block;
-    width: 100px;
-    text-align: center;
+    margin: 3px;
 }
 
 div.active {
     font-weight: bold;
     color: blue;
-    margin: 3px;
+}
+
+img.select-img {
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+    padding: 3px;
 }
 
 img.active-img {
-    border: 2px solid red;
+    border: 3px solid red;
     border-radius: 10px;
+    padding: 0px;
 }
 
 div.weight-table {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
     display: inline-flex;
+    font-size: small;
 }
 
 .weight-table table {
@@ -43,7 +45,7 @@ div.weight-table {
 
 .weight-table-cell {
     padding: 5px;
-    max-width: 500px;
+    /* max-width: 500px; */
 }
 
 .soon-pkmn {
@@ -52,12 +54,31 @@ div.weight-table {
 }
 
 .reset-button {
-    padding: 5px;
-    margin: 3px;
-    font-size: 14pt;
+    font-size: 12pt;
 }
 
 .name-cell {
     padding-right: 2.5%;
     padding-left: 2.5%;
+    max-width: 200px;
 }
+
+
+div.left-col {
+    /* background-color: blue; */
+    /* max-height: 500px; */
+    margin-top: 15px;
+    position: relative;
+    height: relative;
+    max-height: 750px;
+    overflow-y: auto;
+}
+  
+  div.right-col {
+    /* background-color: red; */
+    padding-bottom: 1%;
+    margin-top: 15px;
+    /* max-height: 500px; */
+    max-height: 750px;
+    overflow-y: auto;
+  }

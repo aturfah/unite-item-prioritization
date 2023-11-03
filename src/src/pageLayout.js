@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import React, {Component} from "react";
 import { weightItemUsage } from "./count";
 import '../css/pageLayout.css';
@@ -114,24 +115,28 @@ class PageLayout extends Component {
     }
 
     render() {
-        let itemTable = <i>Select a Pok&eacute;mon above!</i>
+        let itemTable = <i>Select a Pok&eacute;mon!</i>
         if (this.state.selectedPokemon.length !== 0) {
             itemTable = this._generateItemPrioritizationTable()
         }
         return <div className="page-layout">
-            <h1>Choose your Pok&eacute;mon!</h1>
-            {this._generatePokemonNameDisplay()}
 
-            <div>
-                <button className="reset-button" onClick={this._resetPokemon}>Reset Selection</button>
+            <div className='row'>
+                <div className="col-1"></div>
+                <div className="left-col col-md-6 col-s-10">
+                    <h1>Choose your Pok&eacute;mon!</h1>
+                    <div>
+                        <button className="btn btn-dark reset-button" onClick={this._resetPokemon}>Reset Selection</button>
+                    </div>
+                    {this._generatePokemonNameDisplay()}
+                </div>
+                <div className="right-col col-md-4 col-s-10">
+                    <h1>Suggested Item Prioritization</h1>
+                    <div className="weight-table">
+                        {itemTable}
+                    </div>
+                </div>
             </div>
-
-
-            <h1>Suggested Item Prioritization</h1>
-            <div className="weight-table">
-                {itemTable}
-            </div>
-
         </div>
     }
 }

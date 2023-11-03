@@ -1,10 +1,13 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import PageLayout from './src/pageLayout';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-        <PageLayout />
+        <div className="container-fluid">
+          <PageLayout />
+        </div>
         <div className="misc">
           <h1>Purpose</h1>
           <p>
