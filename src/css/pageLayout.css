@@ -7,30 +7,32 @@ div.pokemon-display {
 
 div.pokemon-icon {
     display: inline-flex;
-    margin: 5px;
+    margin: 3px;
 }
 
 div.active {
     font-weight: bold;
     color: blue;
-    margin: 3px;
 }
 
 img.select-img {
     display: inline-block;
-    width: 61px;
+    width: 70px;
     text-align: center;
+    padding: 3px;
 }
 
 img.active-img {
     border: 3px solid red;
     border-radius: 10px;
+    padding: 0px;
 }
 
 div.weight-table {
     margin-left: 5%;
     margin-right: 5%;
     display: inline-flex;
+    font-size: small;
 }
 
 .weight-table table {
@@ -70,7 +72,9 @@ div.left-col {
     margin-top: 15px;
     position: relative;
     height: relative;
-  }
+    max-height: 750px;
+    overflow-y: auto;
+}
   
   div.right-col {
     /* background-color: red; */
