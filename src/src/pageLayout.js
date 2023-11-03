@@ -115,7 +115,7 @@ class PageLayout extends Component {
     }
 
     render() {
-        let itemTable = <i>Select a Pok&eacute;mon above!</i>
+        let itemTable = <i>Select a Pok&eacute;mon!</i>
         if (this.state.selectedPokemon.length !== 0) {
             itemTable = this._generateItemPrioritizationTable()
         }
@@ -123,14 +123,14 @@ class PageLayout extends Component {
 
             <div className='row'>
                 <div className="col-1"></div>
-                <div className="left-col col-md-4 col-s-10">
+                <div className="left-col col-md-6 col-s-10">
                     <h1>Choose your Pok&eacute;mon!</h1>
                     <div>
                         <button className="reset-button" onClick={this._resetPokemon}>Reset Selection</button>
                     </div>
                     {this._generatePokemonNameDisplay()}
                 </div>
-                <div className="right-col col-md-6 col-s-10">
+                <div className="right-col col-md-4 col-s-10">
                     <h1>Suggested Item Prioritization</h1>
                     <div className="weight-table">
                         {itemTable}
