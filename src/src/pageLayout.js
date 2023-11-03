@@ -126,7 +126,7 @@ class PageLayout extends Component {
                 <div className="left-col col-md-6 col-s-10">
                     <h1>Choose your Pok&eacute;mon!</h1>
                     <div>
-                        <button className="reset-button" onClick={this._resetPokemon}>Reset Selection</button>
+                        <button className="btn btn-dark reset-button" onClick={this._resetPokemon}>Reset Selection</button>
                     </div>
                     {this._generatePokemonNameDisplay()}
                 </div>
